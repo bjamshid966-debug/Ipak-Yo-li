@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ipak Yo'li — Buyuk karvon izidan</title>
+<meta name="description" content="Buyuk Ipak Yo'li bo'ylab interaktiv sayohat: Xiva, Buxoro, Samarqand, Shahrisabz va Toshkent.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <a href="#top" class="logo">Ipak Yo'li</a>
+  <nav>
+    <a href="#yol">Yo'l</a>
+    <a href="#tarix">Tarix</a>
+    <a href="#hunar">Hunarlar</a>
+  </nav>
+  <button id="sound" class="snd" aria-pressed="false" title="Karvon musiqasi">♪ Tovush</button>
+</header>
+
+<section class="hero" id="top">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <p class="kicker">Samarqanddan Xivagacha, ming yillik savdo yo'li</p>
+    <h1>Ipak<br>Yo'li</h1>
+    <p class="lead">Karvonlar bu yerdan ipak, ziravor va g'oyalarni olib o'tgan. Sichqonchani siljiting — sakkiz qirrali yulduzlar sizga qarab buriladi.</p>
+    <a class="btn" href="#yol">Sayohatni boshlash</a>
+  </div>
+</section>
+
+<section class="route" id="yol">
+  <h2>Beshta shahar, bitta yo'l</h2>
+  <p class="sub">Shaharni tanlang — karvon o'sha yerda to'xtaydi.</p>
+  <div class="line" id="line">
+    <svg viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 70 C150 10 250 120 400 60 S650 10 800 70 S950 100 1000 60" id="path"/>
+    </svg>
+    <div class="nodes" id="nodes"></div>
+    <div class="camel" id="camel" aria-hidden="true">🐪</div>
+  </div>
+  <article class="panel" id="panel" aria-live="polite">
+    <h3 id="pName"></h3>
+    <p class="tag" id="pTag"></p>
+    <p id="pText"></p>
+    <ul id="pFacts"></ul>
+  </article>
+</section>
+
+<section class="history" id="tarix">
+  <h2>Asrlar zanjiri</h2>
+  <ol class="tl">
+    <li><b>Mil. av. II asr</b><p>Xitoy va Farg'ona vodiysi o'rtasida birinchi savdo aloqalari yo'lga qo'yiladi. Ipak g'arbga yo'l oladi.</p></li>
+    <li><b>VI–VIII asrlar</b><p>So'g'd savdogarlari Samarqand va Buxoroni Osiyoning eng gavjum bozorlariga aylantiradi.</p></li>
+    <li><b>1370-yil</b><p>Amir Temur Samarqandni poytaxt qiladi. Shahar me'morchilik va fan markaziga aylanadi.</p></li>
+    <li><b>XV asr</b><p>Ulug'bek rasadxonasida yulduzlar kataloglashtiriladi — bu jadval asrlar davomida astronomlarga xizmat qildi.</p></li>
+    <li><b>Bugun</b><p>Bu shaharlar jahon merosi ro'yxatida. Karvon izlari esa bozorlar, ustaxonalar va madrasalarda yashab keladi.</p></li>
+  </ol>
+</section>
+
+<section class="crafts" id="hunar">
+  <h2>Qo'l bilan yaratilgan</h2>
+  <div class="grid">
+    <div class="craft" style="--c:#2ec4b6"><i>◈</i><h3>Atlas va adras</h3><p>Margilonda ipak qurti boqilib, ikat usulida gazlama to'qiladi. Naqshlar qo'lda bo'yaladi.</p></div>
+    <div class="craft" style="--c:#e9b44c"><i>✦</i><h3>Kulolchilik</h3><p>Rishton va G'ijduvon kulollari moviy sir va o'simlik naqshlarini avloddan avlodga o'tkazadi.</p></div>
+    <div class="craft" style="--c:#d1495b"><i>❖</i><h3>Zardo'zlik</h3><p>Buxoroda oltin ip bilan baxmalga tikilgan naqshlar to'y libosini bezagan.</p></div>
+    <div class="craft" style="--c:#7a9cff"><i>✺</i><h3>Yog'och o'ymakorligi</h3><p>Xivadagi ustunlar har biri alohida o'yilgan. Ikkitasi bir-biriga o'xshamaydi.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Ipak Yo'li · O'zbekiston merosiga hurmat bilan yaratildi</p>
+  <a href="#top">Yuqoriga</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
